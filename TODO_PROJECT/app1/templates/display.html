@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="display-container">
+    <div class="display-content">
+        <table border="1">
+            <tr>
+                <th>Todo List</th>
+            </tr>
+            {% for i in todo_data %}
+            <tr>
+                <td>
+                    <a href="{% url 'single' i.id %}"><h3>{{i.task}}</h3></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock content%}

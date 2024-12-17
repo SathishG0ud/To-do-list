@@ -1,0 +1,19 @@
+<div class="navbar">
+    <div class="nav-container">
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'display' %}">Todo list</a></li>
+            <li><a href="{% url 'history' %}">History</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="search">
+            {% if search_bar == True %}
+            <form action="" method="post">
+                {% csrf_token %}
+                <input type="text" name="search" id="search" placeholder="Type to search">&nbsp;
+                <button type="submit">search</button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="history-conatiner">
+    <div class="history-content">
+        <h4 class="hs-head">History Of List</h4>
+        {% for i in history %}
+            <div class="hs-data">
+                <h3>{{i.task}}</h3>
+                <a href="{% url 'delete' i.id %}"><button type="submit" onclick="deletefunction()"><i class="fa-regular fa-trash-can"></i></button></a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

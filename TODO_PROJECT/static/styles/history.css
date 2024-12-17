@@ -1,0 +1,46 @@
+.history-conatiner{
+    /* border: 2px solid; */
+    height: 93vh;
+    display: flex;
+    padding: 60px 0px;
+    align-items: start;
+    justify-content:center;
+}
+
+.history-content{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    flex-direction:column ;
+    /* gap: 10px; */
+    padding: 10px;
+}
+
+.hs-head{
+    background-color: rgb(170, 170, 155);
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hs-data{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.hs-data button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.fa-trash-can{
+    font-size: 18px;
+}
+
+.fa-trash-can:hover{
+    color: red;
+    cursor: pointer;
+}
+
+

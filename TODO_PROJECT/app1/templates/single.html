@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="single-container">
+    <div class="single-content">
+        <h3>{{todo_data.task}}</h3>
+        <p>{{todo_data.description}}</p>
+        <div class="single-btn-group">
+            <a href="{% url 'update' todo_data.id %}"><button type="submit" class="edit">Edit</button></a>
+            <a href="{% url 'complete' todo_data.id %}"><button type="submit" class="m-submit">Mark as complete</button></a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,26 @@
+.home-container{
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 20px;
+}
+
+.home-head{
+    border: 2px solid rgb(198, 242, 239);
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 26px;
+    /* background-color: rgb(138, 160, 167); */
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    /* border: none; */
+    backdrop-filter: blur(10px);
+    text-shadow: 2.5px 1px 1px rgba(0, 0, 0, 0.5);
+    color: rgb(236, 207, 168);
+    letter-spacing: 4px;
+    
+}
